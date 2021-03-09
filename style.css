@@ -11,7 +11,7 @@
 
 body {
 	overflow-x: hidden;
-	background-color: 	#D8D8D8;
+	background-color: 	#8DE4AF;;
 }
 
 ul {
@@ -21,11 +21,11 @@ ul {
 }
 
 li a:hover {
-  background-color: #D3D3D3;
+  background-color: #8DE4AF;
 }
 
 p {
-	color: #9a9a9a;
+	color: ##ffffff;
 	font-size: 13px;
 	line-height: 35px;
 }
@@ -76,14 +76,14 @@ p {
     padding: 0;
     z-index: 10000;
     transition: all 0.2s ease-in-out;
-    background-color:#D8D8D8;
+    background-color:#8DE4AF;;
     text-align: center;
 }
 .header img {
   float: left;
   width: 200px;
   height: 200px;
-  background: rgb(1, 199, 248);
+  background: #8DE4AF;
 }
 .header h1 {
   position: relative;
@@ -372,7 +372,7 @@ section#book-table .left-image img {
 	outline: none;
 	border-bottom: 1px solid #eee;	
 	font-size: 14px;
-	color: #9a9a9a;
+	color: ##ffffff;
 	padding-left: 10px;
 	height: 40px;
 }
@@ -387,7 +387,7 @@ section#book-table .left-image img {
 	border-top: none;
 	border-bottom: 1px solid #eee;
 	font-size: 14px;
-	color: #9a9a9a;
+	color: ##ffffff;
 }
 
 .right-info button {
@@ -667,7 +667,7 @@ section.page-heading {
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center center;
-  background-color:#D8D8D8;
+  background-color:#8DE4AF;;
 	text-align: center; 
 }
 
@@ -924,7 +924,7 @@ section.blog-page .page-number li a:hover {
 	position: absolute;
 	left: 15px;
 	top: 0px;
-	background-color: #d8d8d8;
+	background-color: #8DE4AF;;
 }
 
 

@@ -1,7 +1,10 @@
 <?php
-
-include_once 'db.php';
-
+session_start();
+if($_SESSION["loggedin"] != true){
+    echo 'not logged in';
+    header("Location: DevamLogin.php");
+    exit;
+}
 
 ?>
 <!DOCTYPE html>
@@ -19,26 +22,21 @@ http://www.templatemo.com/tm-507-victory
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
-        <link rel="stylesheet" href="css/fontAwesome.css">
-        <link rel="stylesheet" href="css/hero-slider.css">
-        <link rel="stylesheet" href="css/owl-carousel.css">
-        <link rel="stylesheet" href="css/templatemo-style.css">
-
+      
         <link href="https://fonts.googleapis.com/css?family=Spectral:200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
 
         <script src="main.js"></script>
         <script src="script.js"></script>
-        <script src="myscripts.js"></script>
-
-        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js">
         </script>
         <link rel="stylesheet" href="style.css">
+        
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript"></script>
+        <body style="background-color:	#8DE4AF;;">
 <style>
 body {
   font-family: Arial, Helvetica, sans-serif;
+  
   
   
 }
@@ -72,7 +70,7 @@ input[type=submit]:hover {
 /* Style the container/contact section */
 .container {
   border-radius: 5px;
-  background-color:powderblue;
+  background-color: powderblue;
   padding: 10px;
 }
 
@@ -90,6 +88,9 @@ input[type=submit]:hover {
   display: table;
   clear: both;
 }
+li a:hover {
+  background-color: #45a049 !important;
+}
 
 /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
@@ -104,24 +105,24 @@ input[type=submit]:hover {
     <div class="header">
         <div class="container">
             
-            <img src="logo.jpeg" alt="" width="180" height="180">
+            <img src="logo1.JPG" alt="Dragon Trade" width="20" height="20">
             <nav class="navbar navbar-inverse" role="navigation">
                 <div class="navbar-header">
-                    <button type="button" id="nav-toggle" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav">
-                        <a href="#" class="navbar-brand scroll-top">Dragon Trades</a>
+                    <button type="button" id="nav-togglee" class="navbar-togglle" data-toggle="collapse" data-target="#main-nav">
+                        <a href="index.php" class="navbar-brand scroll-top">Dragon Trades</a>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
+                        
                     </button>
                 </div>
                 <!--/.navbar-header-->
                 <div id="main-nav" class="collapse navbar-collapse">
                     <ul class="nav navbar-nav">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="contact.html">Contact Us</a></li>
-                        <li><a href="sellBook.html">Sell Book</a></li>
-                        <li><a href="DevamLogin.html">Log In</a></li>  
-                        <li><a href="newIndex.html">New</a></li> 
+                        <li><a href="index.php">Home</a></li>
+                        <li><a href="contact.php">Contact Us</a></li>
+                        <li><a href="sellBook.php">Sell Book</a></li>
+                        <li><a href="DevamLogin.php">Log In</a></li>  
+                        <li><a href="checkout.php">Checkout</a></li>  
                     </ul>
                 </div>
                 <!--/.navbar-collapse-->
@@ -131,21 +132,20 @@ input[type=submit]:hover {
         <!--/.container-->
     </div>
     <!--/.header-->
+    
 
 
 
 <div class="container">
   <div style="text-align:center">
-    <h2>Sell Your Book Info</h2>
-    <p>Swing by to check out the books, or leave us a message:</p>
+    
+    
   </div>
   <div class="row txt-center">
     <div class="column">
     </div>
     <div class="column">
-      
-        
-      <form action="db.php" method="post" enctype="multipart/form-data">
+      <form action="db.php" method="POST" enctype="multipart/form-data">
         <label for="fname">First Name</label>
         <input type="text" id="fname" name="firstname" placeholder="Your name..">
         <label for="lname">Last Name</label>
@@ -170,22 +170,21 @@ input[type=submit]:hover {
         <input type="text" id="INumber" name="isbnnumber" placeholder="ISBN Number">
         <label for="dEmail">Drexel Email</label>
         <input type="text" id="dEmail" name="drexelemail" placeholder="Drexel Email">
-        <label for="subject">Details</label>
-        <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+        <label for="subject">Book Name</label>
+        <textarea id="subject" name="subject" placeholder="Enter Book Name.." style="height:170px"></textarea>
         <h3>Select a file:</h3>
           <label for="myfile">Select a file to upload:</label>
-          <input type="file" id="myfile" name="myfile" ><br><br>
-          <input type="submit" name="Submit" id="Submit" value="Submit">
+          <input type="file" id="myfile" name="fileToUpload" multiple><br><br>
+          <input type="submit" name="sellBookSave" id="Submit" value="Submit">
+      
       </form>
     </div>
   </div>
 </div>
 
-</body>
-</html>
 
 
-<footer>
+    <footer>
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
@@ -205,4 +204,46 @@ input[type=submit]:hover {
                 </div>
             </div>
         </div>
-</footer>
+    </footer>
+
+
+    <script src="js/main.js"></script>
+
+    <script type="text/javascript">
+    $(document).ready(function() {
+        // navigation click actions 
+        $('.scroll-link').on('click', function(event){
+            event.preventDefault();
+            var sectionID = $(this).attr("data-id");
+            scrollToID('#' + sectionID, 750);
+        });
+        // scroll to top action
+        $('.scroll-top').on('click', function(event) {
+            event.preventDefault();
+            $('html, body').animate({scrollTop:0}, 'slow');         
+        });
+        // mobile nav toggle
+        $('#nav-toggle').on('click', function (event) {
+            event.preventDefault();
+            $('#main-nav').toggleClass("open");
+        });
+    });
+    // scroll function
+    function scrollToID(id, speed){
+        var offSet = 0;
+        var targetOffset = $(id).offset().top - offSet;
+        var mainNav = $('#main-nav');
+        $('html,body').animate({scrollTop:targetOffset}, speed);
+        if (mainNav.hasClass("open")) {
+            mainNav.css("height", "1px").removeClass("in").addClass("collapse");
+            mainNav.removeClass("open");
+        }
+    }
+    if (typeof console === "undefined") {
+        console = {
+            log: function() { }
+        };
+    }
+    </script>
+</body>
+</html>

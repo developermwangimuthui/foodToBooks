@@ -23,7 +23,7 @@ ul {
 }
 
 p {
-	color: #9a9a9a;
+	color: ##ffffff;
 	font-size: 13px;
 	line-height: 24px;
 }
@@ -348,7 +348,7 @@ section#book-table .left-image img {
 	outline: none;
 	border-bottom: 1px solid #eee;	
 	font-size: 14px;
-	color: #9a9a9a;
+	color: ##ffffff;
 	padding-left: 10px;
 	height: 40px;
 }
@@ -363,7 +363,7 @@ section#book-table .left-image img {
 	border-top: none;
 	border-bottom: 1px solid #eee;
 	font-size: 14px;
-	color: #9a9a9a;
+	color: ##ffffff;
 }
 
 .right-info button {
