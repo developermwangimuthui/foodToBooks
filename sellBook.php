@@ -32,7 +32,7 @@ http://www.templatemo.com/tm-507-victory
         <link rel="stylesheet" href="style.css">
         
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript"></script>
-        <body style="background-color:	#8DE4AF;;">
+        <body style="background-color:	#C39482;;">
 <style>
 body {
   font-family: Arial, Helvetica, sans-serif;
@@ -70,7 +70,7 @@ input[type=submit]:hover {
 /* Style the container/contact section */
 .container {
   border-radius: 5px;
-  background-color: powderblue;
+  background-color: C39482;
   padding: 10px;
 }
 

@@ -11,7 +11,7 @@
 
 body {
 	overflow-x: hidden;
-	background-color: 	#8DE4AF;;
+	background-color: 	#C39482;;
 }
 
 ul {
@@ -21,7 +21,7 @@ ul {
 }
 
 li a:hover {
-  background-color: #8DE4AF;
+  background-color: #C39482;
 }
 
 p {
@@ -76,14 +76,14 @@ p {
     padding: 0;
     z-index: 10000;
     transition: all 0.2s ease-in-out;
-    background-color:#8DE4AF;;
+    background-color:#C39482;;
     text-align: center;
 }
 .header img {
   float: left;
   width: 200px;
   height: 200px;
-  background: #8DE4AF;
+  background: #C39482;
 }
 .header h1 {
   position: relative;
@@ -125,7 +125,7 @@ p {
 .nav {
 	list-style:none;
     position:relative;
-    left:50%;
+    left:80%;
 }
 
 .navbar-nav li {
@@ -137,7 +137,7 @@ p {
 	font-family: 'Roboto', sans-serif;
 	font-size: 13px;
 	text-transform: uppercase;
-	color: #363e50!important;
+	color: #030003!important;
 	letter-spacing: 0.5px;
 }
 
@@ -614,7 +614,7 @@ section.sign-up {
 
 
 footer {
-	background-color: #363e50;
+	background-color: #C39482;
 	line-height: 130px;
 	text-align: center;
 }
@@ -650,7 +650,7 @@ footer ul li i {
 	line-height: 36px!important;
 	background-color: #fff;
 	border-radius: 50%;
-	color: #363e50;
+	color: #C39482;
 	transition: all 0.5s;
 }
 
@@ -667,7 +667,7 @@ section.page-heading {
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center center;
-  background-color:#8DE4AF;;
+  background-color:#C39482;;
 	text-align: center; 
 }
 
@@ -924,7 +924,7 @@ section.blog-page .page-number li a:hover {
 	position: absolute;
 	left: 15px;
 	top: 0px;
-	background-color: #8DE4AF;;
+	background-color: #C39482;;
 }
 
 
@@ -1016,7 +1016,7 @@ section.map #map {
 		margin-top: 20px;
 	}
 	footer {
-		background-color: #363e50;
+		background-color: #C39482;
 		line-height: 40px;
 		text-align: center;
 	}
@@ -1101,7 +1101,7 @@ section.map #map {
 		margin-top: 20px;
 	}
 	footer {
-		background-color: #363e50;
+		background-color: #C39482;
 		line-height: 40px;
 		text-align: center;
 	}

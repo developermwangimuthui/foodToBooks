@@ -30,7 +30,7 @@ http://www.templatemo.com/tm-507-victory
         <link rel="stylesheet" href="css/templatemo-style.css">
         <html>
         
-<body style="background-color:	#8DE4AF;;">
+<body style="background-color:	#C39482;;">
   
 </body>
 </html>

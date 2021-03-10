@@ -35,25 +35,33 @@ http://www.templatemo.com/tm-507-victory
     <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js">
     </script>
     <link rel="stylesheet" href="style.css">
-    <style>
+  <style>
         .grid-container {
             display: grid;
             grid-template-columns: auto auto auto;
-            background-color: #8DE4AF;
+            /* background-color: #C39482; */
             padding: 10px;
+            background-image: url("img5.jpg");
 
             margin-top: 200px;
         }
 
         .grid-item {
-            background-color: #5CDB94;
+            /* background-color: #C39482; */
             border: 1px solid rgba(0, 0, 0, 0.8);
             padding: 20px;
             font-size: 30px;
             text-align: center;
         }
 
+        .navbar {
 
+            /* background-image: url("img4.jpg"); */
+        }
+
+        p {
+            color: red;
+        }
 
         a:hover {
             background-color: #ddd;
@@ -79,7 +87,8 @@ http://www.templatemo.com/tm-507-victory
 
         .navbar {
             overflow: hidden;
-            background-color: #8DE4AF;;
+            background-color: #C39482;
+            ;
             position: fixed;
             top: 0;
             width: 100%;
@@ -97,7 +106,8 @@ http://www.templatemo.com/tm-507-victory
         }
 
         .navbar a:hover {
-            background: #5CDB94;;
+            background: #C39482;
+            ;
             color: D8D8D8;
         }
 

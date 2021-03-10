@@ -124,6 +124,8 @@ if (isset($_POST['savecontact'])) {
   $sql = "INSERT INTO messages(phone,message,name,email) VALUES ('$phone','$message','$name','$email')";
 
   if (mysqli_query($conn, $sql)) {
+
+     try {
     $mail->SMTPDebug = SMTP::DEBUG_SERVER;                      //Enable verbose debug output
     $mail->isSMTP();                                            //Send using SMTP
     $mail->Host       = "ssl://smtp.gmail.com";                      //Set the SMTP server to send through
@@ -142,13 +144,10 @@ if (isset($_POST['savecontact'])) {
     $mail->Body    = $message;
 
     $mail->send();
-    echo 'Message has been sent';
-    echo "<script>alert('Record Added Successfully'); window.location.href ='contact.php';</script>";
-    //  try {
-
-    //  } catch (\Throwable $th) {
-    //   echo 'Message has been sent';
-    //  }
+    echo "<script>alert('Record Added Successfully and Message has been sent'); window.location.href ='contact.php';</script>";
+     } catch (\Throwable $th) {
+      echo 'Message has not been sent';
+     }
 
     exit;
   } else {

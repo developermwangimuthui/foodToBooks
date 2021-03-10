@@ -43,11 +43,11 @@ if($_SESSION["loggedin"] != true){
 .grid-container {
   display: grid;
   grid-template-columns: auto auto auto;
-  background-color: #8DE4AF;
+  background-color: #C39482;
   padding: 10px;
 }
 .grid-item {
-  background-color: #5CDB94;
+  background-color: #C39482;
   
   padding: 20px;
   font-size: 30px;

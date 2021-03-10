@@ -117,7 +117,7 @@ p {
 	font-family: 'Roboto', sans-serif;
 	font-size: 13px;
 	text-transform: uppercase;
-	color: #363e50!important;
+	color: #C39482!important;
 	letter-spacing: 0.5px;
 }
 
@@ -587,7 +587,7 @@ section.sign-up {
 
 
 footer {
-	background-color: #363e50;
+	background-color: #C39482;
 	line-height: 130px;
 	text-align: center;
 }
@@ -623,7 +623,7 @@ footer ul li i {
 	line-height: 36px!important;
 	background-color: #fff;
 	border-radius: 50%;
-	color: #363e50;
+	color: #C39482;
 	transition: all 0.5s;
 }
 
@@ -1026,7 +1026,7 @@ section.map #map {
 		margin-top: 20px;
 	}
 	footer {
-		background-color: #363e50;
+		background-color: #C39482;
 		line-height: 40px;
 		text-align: center;
 	}
@@ -1140,7 +1140,7 @@ section.map #map {
 		margin-top: 20px;
 	}
 	footer {
-		background-color: #363e50;
+		background-color: #C39482;
 		line-height: 40px;
 		text-align: center;
 	}

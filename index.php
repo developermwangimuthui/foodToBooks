@@ -42,12 +42,13 @@ if ($_SESSION["loggedin"] != true) {
         .grid-container {
             display: grid;
             grid-template-columns: auto auto auto;
-            background-color: #5CDB94;
+            background-color: #C39482;
+            
             padding: 10px;
         }
 
         .grid-item {
-            background-color: #5CDB94;
+            background-color: #C39482;
 
             padding: 20px;
             font-size: 30px;
@@ -61,7 +62,7 @@ if ($_SESSION["loggedin"] != true) {
         }
 
         a:hover {
-            background-color: #5CDB94;
+            background-color: #C39482;
             color: black;
         }
 
@@ -86,7 +87,7 @@ if ($_SESSION["loggedin"] != true) {
         }
 
         .grid-item {
-            background-color: #5CDB94;
+            background-color: #C39482;
 
             padding: 20px;
             font-size: 30px;
@@ -172,13 +173,16 @@ if ($_SESSION["loggedin"] != true) {
             <nav class="navbar navbar-inverse" role="navigation">
                 <div class="navbar-header">
                     <button type="button" id="nav-togglle">
-                        <a href="index.php" class="navbar-brand scroll-top">Dragon Trades</a>
+                        <a href="index.php" class="navbar-brand scroll-top">Dragon Trades <br>
+                    <span><?php echo "Hello ".  $_SESSION['username'];?></span>
+                    </a><br>
+                    
 
 
                     </button>
                 </div>
                 <!--/.navbar-header-->
-                <div id="main-nav" class="collapse navbar-collapse">
+                <div id="main-nav" class="collapse navbar-collapse" >
                     <ul class="nav navbar-nav">
                         <li><a href="index.php">Home</a></li>
                         <li><a href="contact.php">Contact Us</a></li>
